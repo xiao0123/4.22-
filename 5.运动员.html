@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.man{
+				margin: 50px auto;
+				position: relative;
+				/*border: 1px solid red;*/
+				width: 100px;
+				height: 600px;
+			}
+			.shadow{
+				position: absolute;
+				left: -40px;
+				bottom: 0px;
+			}
+			.torso{
+				position: absolute;
+				top:5px;
+				left: 5px;
+				z-index: 1;
+				
+			}
+			.left-bicep{
+				position: absolute;
+				left: 9px;
+    			top: 95px;
+				z-index: -999;
+				-webkit-transform-origin: 10px 10px;
+				-webkit-animation: rightbicep 5s ease 2.5s infinite;
+			}
+			.left-forearm{
+				position: absolute;
+				left: 12px;
+    			top: 106px;
+    			-webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightforearm 5s ease 0s infinite;
+    			
+			}
+			
+			.right-bicep{
+				    position: absolute;
+				    left: 9px;
+				    top: 95px;
+				    z-index: 9;
+				    -webkit-transform-origin: 10px 10px;
+				    -webkit-animation: rightbicep 5s ease 0s infinite;
+			}
+			.right-forearm{
+			    position: absolute;
+			    left: 14px;
+			    top: 107px;
+			    z-index: 9;
+			    -webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightforearm 5s ease 0s infinite;
+    			
+			}
+			.left-thigh{
+				position: absolute;
+				top:255px;
+				left: 10px;
+				-webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightthigh 5s ease 2.5s infinite;
+				
+			}
+			.right-thigh{
+				position: absolute;
+				top:260px;
+				left: 10px;
+				-webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightthigh 5s ease 0s infinite;
+				
+			}
+			
+			
+			
+			.shin{
+				position: absolute; 
+			    top: 102px;
+			    left: 12px;
+			    z-index: -999;
+   				
+			}
+			.shin1{
+			    -webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightshin 5s ease 2.5s infinite;
+			}
+			.shin2{
+			    -webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightshin 5s ease 0s infinite;
+			}
+			.foot{
+				position: absolute;
+				left: 4px;
+    			top: 159px;
+    			-webkit-transform-origin: 10px 10px;
+			    -webkit-animation: rightfoot 5s ease 0s infinite;
+			}
+			.toes{
+				position: absolute;
+				left: 66px;
+    			top: 9px;
+			}
+			@-webkit-keyframes rightbicep{
+				 0%   { -webkit-transform: rotate(20deg); }   
+			    50%  { -webkit-transform: rotate(-20deg); }   
+			    100% { -webkit-transform: rotate(20deg); } 
+			}
+			@-webkit-keyframes rightforearm{
+				0%   { -webkit-transform: rotate(0deg); }   
+			    50%  { -webkit-transform: rotate(-45deg); }   
+			    100% { -webkit-transform: rotate(0deg); } 
+			}
+			
+			@-webkit-keyframes rightthigh{
+				 0%   { -webkit-transform: rotate(-20deg); } 
+			    50%  { -webkit-transform: rotate(10deg); } 
+			    100% { -webkit-transform: rotate(-20deg); } 
+			}
+			@-webkit-keyframes rightshin{
+				 0%   { -webkit-transform: rotate(0deg); }   
+			   	50%  { -webkit-transform: rotate(30deg); }  
+			    100% { -webkit-transform: rotate(0deg); }   
+			}
+			@-webkit-keyframes rightfoot{
+				 0%   { -webkit-transform: rotate(0deg); }   
+			   	50%  { -webkit-transform: rotate(-10deg); }  
+			    100% { -webkit-transform: rotate(0deg); }   
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="man">
+			<div class="torso">
+				<img  src="img/torso.png"/>
+			</div>
+			
+			
+			<div class="left-bicep">
+				<img class="" src="img/left-bicep.png"/>
+				<div class="left-forearm">
+					<img class="" src="img/left-forearm.png"/>
+				</div>
+			</div>
+			
+			
+			<div class="right-bicep">
+				<img  src="img/right-bicep.png"/>
+				<div class="right-forearm">
+					<img  src="img/right-forearm.png"/>
+				</div>
+			</div>
+			
+			<div class="left-thigh">
+				<img src="img/left-thigh.png"/>
+				<div class="shin shin1">
+					<img  src="img/shin.png"/>
+					<div class="foot">
+						<img  src="img/foot.png"/>
+						<div class="toes">
+							<img src="img/toes.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right-thigh">
+				<img src="img/left-thigh.png"/>
+				<div class="shin shin2">
+					<img  src="img/shin.png"/>
+					<div class="foot">
+						<img  src="img/foot.png"/>
+						<div class="toes">
+							<img src="img/toes.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="shadow">
+				<img src="img/shadow.png"/>
+			</div>
+			
+		</div>
+	</body>
+</html>
